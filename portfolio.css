@@ -1,0 +1,223 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: image-set("background2.jpg");
+    background-position: cover;
+    box-sizing: border-box;
+    text-decoration: none;
+    filter: drop-shadow(50px);
+}
+
+.h1{
+    font-family: cursive;
+    position: fixed;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    height: 10vh;
+    z-index: 1;
+}
+
+.navbar ul{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content:right;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+
+
+.h1{
+    color: white;
+    font-size: 1.7rem;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    margin:20px 0px;
+    padding-bottom:20% ;
+    padding: 0;
+}
+
+a{
+    margin-left: 2.9rem;
+    font-size: 1.2rem;
+    font-family: cursive;
+    transition-duration:2.0s;
+    color: white;
+    text-transform: uppercase;
+}
+
+a:hover{
+    border-bottom: 2px solid white;
+    font-size: 1.3rem;
+}
+
+
+
+#home{
+    padding: 20px 20px;
+    border: transparent;
+    background-image: url("coded.jpeg");
+}
+
+.melo-pic{
+    border: transparent;
+    border-radius:70px ;
+    height: 10cm;
+    width: 10cm;
+    margin-top: 90px;
+    padding: 30px;
+    filter: saturate(200px,30px);
+    float: left;
+    transition-duration: 2s;
+}
+
+.melo-pic:hover{
+    transform: translate(50px,100px);
+    transform: scale(0,1);
+    border: 1px solid aqua;
+    object-fit: contain;
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    height: 100%;
+    z-index: 1;
+    padding-top: 150px;
+    margin-left: 10px;
+    font-size: 50px;
+    font-family: cursive;
+    text-transform: capitalize;
+    color: white;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 1;
+    padding-left:50px;
+    font-size: 35px;
+    color:whitesmoke;
+    flex-wrap: nowrap;
+    font-family: cursive;
+    filter: blur('10');
+}
+.icons{
+    min-height: 2cm;
+    max-height: 2cm;
+    transition-duration: 2.0s;
+    transition-delay: 0.1s ease;
+}
+
+.icons:hover{
+    border: 2px solid goldenrod;
+    border-radius: 100px;
+    max-height: 2.5cm;
+    min-width: 2.5cm;
+}
+article > p::first-letter{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: coral;
+}
+
+span{
+    color:aquamarine;
+}
+
+#colorpicker{
+    display: flex;
+    justify-content: center;
+}
+
+.projects{
+    background-image: url("alien.jpeg");
+    opacity: 20px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns:inline;
+    gap: 10px;
+}
+
+
+.code{
+    height: 8cm;
+    width: 8cm;
+    padding-left: 70px;
+    border: transparent;
+    border-radius: 30px;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+
+.code:hover{
+   border: solid 1px white;
+   padding-left: 0px;
+   height: 9cm;
+   width: 9cm;
+}
+
+.latest{
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+.a-b{
+    font-family: cursive;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+h2{
+    font-family: cursive;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.about{
+    padding: 20px;
+    margin: 20px;
+    opacity: 10; /* Initial opacity for popup animation */
+    animation: fadeInUp 0.5s ease-in-out forwards 
+}
+
+.speech{
+    font: message-box;
+    font-family: cursive;
+    font-size: 3em;
+    text-transform: capitalize;
+    color: white;
+}
+
+select{
+    height: 30px;
+    width: var(--30px);
+    border: transparent;
+    border-radius:20px 10px;
+    bottom: 0em;
+}
+
+option{
+    font: icon;
+    font-size: 2em;
+    border: transparent;
+    border-radius: 20px 10px;
+}
